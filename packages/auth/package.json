@@ -1,0 +1,24 @@
+{
+  "name": "@terminal-opentui-agent/auth",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@terminal-opentui-agent/db": "workspace:*",
+    "@terminal-opentui-agent/env": "workspace:*",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@terminal-opentui-agent/config": "workspace:*",
+    "typescript": "catalog:"
+  }
+}
